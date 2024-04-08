@@ -56,7 +56,6 @@ public class DialogContent extends ParentPage {
     @FindBy(css = "[name='password']")
     public WebElement loginPassword;
 
-    //tuba
     @FindBy(xpath = "//input[@name='payee.name']")
     public WebElement payeename;
 
@@ -89,7 +88,6 @@ public class DialogContent extends ParentPage {
 
     @FindBy(xpath = "//input[@class='button']")
     public WebElement sendpaymentButton;
-
 
 
     public WebElement getWebElement(String strElement) {
@@ -128,7 +126,6 @@ public class DialogContent extends ParentPage {
                 return this.payeename;
             case "payeeaddress":
                 return this.payeeaddress;
-
             case "payeeaddresscity":
                 return this.payeeaddresscity;
             case "Payeeaddrestate":

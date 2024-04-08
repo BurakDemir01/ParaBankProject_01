@@ -24,7 +24,12 @@ public class GenNav extends ParentPage{
     public WebElement errorMessage;
 
     @FindBy(xpath = "//a[text()='Bill Pay']")
-    public WebElement billpay;  //tuba
+    public WebElement billpay;
+
+    @FindBy(xpath = "//a[text()='Open New Account']")
+    public WebElement oNewAccount;
+
+
 
 
     public WebElement getWebElement(String strElement){
