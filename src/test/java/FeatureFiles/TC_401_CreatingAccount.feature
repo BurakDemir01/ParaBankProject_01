@@ -11,7 +11,5 @@ Feature:Bill Payment functionality
 
     Scenario: Open new Account
       When User clicks open new Account
-      And User selects the type of account
-      And user selects the min Ballance Account
       Then the User click on the Open new Account button
       And user confirms that a successful registration process has taken place

@@ -29,9 +29,6 @@ public class GenNav extends ParentPage{
     @FindBy(xpath = "//a[text()='Open New Account']")
     public WebElement oNewAccount;
 
-
-
-
     public WebElement getWebElement(String strElement){
         switch (strElement){
             case "register": return this.register;
@@ -40,8 +37,4 @@ public class GenNav extends ParentPage{
         }
         return null;
     }
-
-
-
-
 }

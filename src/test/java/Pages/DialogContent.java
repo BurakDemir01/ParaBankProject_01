@@ -89,6 +89,11 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "//input[@class='button']")
     public WebElement sendpaymentButton;
 
+    @FindBy(xpath = "//select[@id='type']")
+    public WebElement typeAccount;
+
+    @FindBy(xpath = "//select[@id='fromAccountId']/option")
+    public WebElement minimumDeposit;
 
     public WebElement getWebElement(String strElement) {
         switch (strElement) {
@@ -140,9 +145,11 @@ public class DialogContent extends ParentPage {
                 return this.verifyAccount;
             case "payeeamount":
                 return this.payeeamount;
-
+            case "typeAccount":
+                return this.typeAccount;
+            case "minimumDeposit":
+                return this.minimumDeposit;
         }
         return null;
-
     }
 }
